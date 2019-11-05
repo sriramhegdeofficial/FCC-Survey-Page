@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the 
+                time to help us improve the platform</p>
+
+            <form id="survey-form">
+                  <div class="form-group">
+                    <label id="name-label" for="name" class="form-control-label">name</label>
+                    <input type="text" id="name" name="name" 
+                    placeholder="Enter Your Name" class="form-control-input"
+                    required/>
+                  </div>
+                  <div class="form-group">
+                    <label id="email-label" for="email" class="form-control-label">email</label>
+                    <input type="email" id="email" name="email" 
+                    placeholder="Enter Your Email" class="form-control-input"
+                    required/>
+                  </div>
+                  <div class="form-group">
+                    <label  id="number-label" for="number" class="form-control-label">Age <span class="bracket">(optional)</span></label>
+                    <input type="number" id="number" name="number" 
+                    placeholder="Enter Your Age" class="form-control-input"
+                    min="10" max="99"
+                    />
+                  </div>
+                <div class="form-group">
+                    <label for="dropdown" class="form-control-label">Which option best describes your current role?</label>
+                    <select id="dropdown" class="form-control-input">
+                        <option value="select current role">select current role</option>
+                        <option value="student">Student</option>
+                        <option value="fulltime job">Fulltime job</option>
+                        <option value="fulltime learner">fulltime learner</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                    <div class="form-group">
+                        <label class="form-control-label" >Would you recommend freeCodeCamp to a friend?</label>
+                        <label class="radio-checkbox-label">
+                          <input
+                            name="user-recommend"
+                            value="definitely"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                          />Definitely</label
+                        >
+                        <label class="radio-checkbox-label">
+                          <input
+                            name="user-recommend"
+                            value="maybe"
+                            type="radio"
+                            class="input-radio"
+                          />Maybe</label
+                        >
+                  
+                        <label class="radio-checkbox-label"
+                          ><input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                            class="input-radio"
+                          />Not sure</label
+                        >
+                      </div>
+                      <div class="form-group">
+                          <label class="form-control-label">What is your favorite feature of freeCodeCamp?</label>
+                          <select id="dropdown2" class="form-control-input">
+                            <option value="none" selected disabled>Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="opensource">Opensource</option>
+                            
+                        </select>
+                        <div class="form-group">
+                            <label class="form-control-label">
+                              What would you like to see improved?
+                              <span class="bracket">(Check all that apply)</span>
+                            </label>
+                      
+                            <label
+                                class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="front-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Front-end Projects</label
+                            >
+                            <label
+                            class="radio-checkbox-label"
+                            >
+                              <input
+                                name="prefer"
+                                value="back-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Back-end Projects</label
+                            >
+                            <label
+                            class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="data-visualization"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Data Visualization</label
+                            >
+                            <label
+                            class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="challenges"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Challenges</label
+                            >
+                            <label
+                            class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="open-source-community"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Open Source Community</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="gitter-help-rooms"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Gitter help rooms</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="videos"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Videos</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="city-meetups"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />City Meetups</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="wiki"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Wiki</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="forum"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Forum</label
+                            >
+                            <label class="radio-checkbox-label"
+                              ><input
+                                name="prefer"
+                                value="additional-courses"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Additional Courses</label
+                            >
+                          </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="form-control-label">Any comments or suggestions?</label>
+                            <textarea rows="4" class="comment"></textarea>
+                      </div>
+                      <input type="submit" id="submit" value="submit"/>
+
+            </form>
+  
+     
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
